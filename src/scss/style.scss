@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+$font: 15px;
+
+$lightBackground: hsl(180, 52%, 96%);
+$lightFilterTablets: hsl(180, 31%, 95%);
+$dark: hsl(180, 8%, 52%);
+$desaturated_dark: hsl(180, 29%, 50%);
+$veryDark: hsl(180, 14%, 20%);
+
+@mixin fontSize500 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: $font;
+}
+@mixin fontSize700 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: $font;
+}

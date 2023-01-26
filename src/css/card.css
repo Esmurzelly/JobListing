@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+.card {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 14px 36px -22px hsl(180deg, 31%, 95%);
+          box-shadow: 0px 14px 36px -22px hsl(180deg, 31%, 95%);
+  border-radius: 10px;
+  padding: 45px 20px 20px 20px;
+}
+.card:first-child {
+  margin-top: 50px;
+}
+.card .main .under_logo p {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.card .main .under_logo p:hover {
+  color: hsl(180deg, 29%, 50%);
+}
+.card .main .skills span {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 7px;
+}
+.card .main .skills span:hover {
+  color: #fff;
+  background-color: hsl(180deg, 14%, 20%);
+}
+
+@media (min-width: 250px) {
+  .card {
+    padding: 45px 20px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  .card .logo img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+  }
+  .card .main h3 {
+    color: hsl(180deg, 29%, 50%);
+  }
+  .card .main p {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .card .main hr {
+    margin-top: 10px;
+    border: none;
+    border-top: 1px solid #000;
+  }
+  .card .main .preferences {
+    color: hsl(180deg, 8%, 52%);
+    margin-top: 10px;
+  }
+  .card .main .preferences span {
+    margin-right: 10px;
+  }
+  .card .main .preferences span:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    width: 3px;
+    height: 3px;
+    background-color: hsl(180deg, 8%, 52%);
+    border-radius: 2px;
+  }
+  .card .main .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .card .main .skills span {
+    margin: 7px;
+    color: hsl(180deg, 29%, 50%);
+    background-color: hsl(180deg, 31%, 95%);
+    padding: 7px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    width: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card .main {
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+  }
+  .card .logo img {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 0;
+  }
+}
